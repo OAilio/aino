@@ -1,9 +1,9 @@
 function App() {
 
   return (
-    <>
-      <span>Yeah</span>
-    </>
+    <div className="h-[100vh] w-full bg-red-300">
+      <span className="text-xl font-bold text-accent">Yeah</span>
+    </div>
   )
 }
 
