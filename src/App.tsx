@@ -1,10 +1,14 @@
-function App() {
+import { Navbar } from './components/navbar/Navbar';
 
+function App() {
   return (
-    <div className="h-[100vh] w-full bg-red-300">
-      <span className="text-xl font-bold text-accent">Yeah</span>
-    </div>
-  )
+    <>
+      <Navbar />
+      <h1 className="mt-[4rem] text-[5rem] text-accent font-black">
+        AINO JYLHÄ
+      </h1>
+    </>
+  );
 }
 
-export default App
+export default App;
