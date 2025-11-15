@@ -9,7 +9,7 @@ type Props = {
 export const Landing: React.FC<Props> = ({ className }) => {
   return (
     <div
-      className={`w-full h-[calc(100vh-64px)] bg-primary flex items-center px-32 ${className ?? ''}`}
+      className={`w-full md:h-[calc(100vh-64px)] bg-primary flex flex-col md:flex-row items-center px-4 md:px-8 lg:px-16 xl:px-32 ${className ?? ''}`}
     >
       <LandingText />
       <LandingImage />

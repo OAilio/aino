@@ -5,23 +5,30 @@ type Props = {
 
 export const LandingImage: React.FC<Props> = ({ className }) => {
   return (
-    <div className={`flex flex-1 justify-center ${className ?? ''}`}>
-      <div className="relative flex ">
-        <span className="bg-primary z-3 w-[528px] flex items-center justify-center rounded-xl shadow-[4px_4px_10px_0px_rgba(0,0,0,0.10)]">
+    <div
+      className={`w-[90%] md:w-full flex flex-1 justify-center ${className ?? ''}`}
+    >
+      <div className="relative flex">
+        <span className="bg-primary z-3 w-fit md:w-[256px] lg:w-[456px] flex items-center justify-center rounded-xl shadow-[4px_4px_10px_0px_rgba(0,0,0,0.10)]">
           <img
-            src="./AinoCropNoLine.png"
+            src="./AinoImg.png"
             alt="Picture of Aino"
-            className="object-cover h-[528px]"
+            className="self-end object-cover h-fit md:h-[256px] lg:h-[456px]"
           />
         </span>
         <svg
-          className="absolute w-[528px] h-[528px] -right-16 top-16 rotate-[-4deg]"
+          className="
+            absolute -right-8 top-8
+            md:w-[256px] md:h-[256px]
+            lg:w-[456px] lg:h-[456px] lg:-right-12 lg:top-12
+            rotate-[-4deg]
+          "
           viewBox="0 0 528 528"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
         >
-          <rect width="528" height="528" fill="#FDBA74" rx="24" />
+          <rect width="100%" height="100%" fill="#FDBA74" rx="24" />
         </svg>
       </div>
     </div>
