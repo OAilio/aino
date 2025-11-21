@@ -1,11 +1,43 @@
 @import 'tailwindcss';
 
+@layer utilities {
+  .container-padding {
+    @apply px-4 md:px-8 lg:px-16 xl:px-32;
+  }
+  .bg-landing-gradient {
+    background-image: linear-gradient(
+      to bottom left,
+      #eefdf0 0%,
+      #eefdf0 80%,
+      #b4e3ba 100%
+    );
+  }
+  .bg-grey-gradient {
+    background-image: linear-gradient(
+      to bottom right,
+      #f6f6f6 0%,
+      #f6f6f6 70%,
+      #dedddd 100%
+    );
+  }
+  .bg-beige-gradient {
+    background-image: linear-gradient(
+      to top right,
+      #fbe9cc 0%,
+      #fbe9cc 55%,
+      #ffdfac 100%
+    );
+  }
+}
+
 @theme {
   --color-accent: #22775c;
   --color-accent-hover: #0f4e3a;
   --color-accent-content: #f6f6f6;
   --color-primary: #eefdf0;
   --color-primary-content: #252121;
+  --color-secondary: #f6f6f6;
+  --color-tertiary-content: #7e5735;
 }
 
 html {

@@ -3,13 +3,13 @@ import { CustomLink } from './components/CustomLink';
 import { OverlayMenu } from './components/OverlayMenu';
 import { BurgerMenuIcon } from './components/BurgerMenuIcon';
 
-//TODO Mobile nav
+//TODO NAv bg color when scroll
 
 export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <nav className="absolute bg-primary sticky z-10 top-0 w-full h-16 px-4 md:px-8 lg:px-16 xl:px-32 flex items-center justify-between">
+      <nav className="absolute sticky z-10 top-0 w-full h-16 container-padding flex items-center justify-between">
         <CustomLink to={'/'}>AINO JYLHÄ</CustomLink>
         <span className="flex hidden md:flex">
           <CustomLink to={'/'}>About</CustomLink>
