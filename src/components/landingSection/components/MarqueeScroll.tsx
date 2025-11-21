@@ -9,7 +9,7 @@ const domains = ['LAB WORK', 'MARKETING', 'HOSTING'];
 export const MarqueeScroll: React.FC<Props> = ({ className }) => {
   return (
     <div
-      className={`absolute left-0 bottom-8 pl-4 z-2 bg-beige-gradient w-[110%] rotate-[9deg] -translate-x-6 ${className ?? ''}`}
+      className={`absolute left-0 bottom-4 md:bottom-8 pl-4 z-2 bg-beige-gradient w-[110%] rotate-[9deg] -translate-x-6 ${className ?? ''}`}
     >
       <Marquee autoFill>
         {domains.map((domain) => (
