@@ -27,7 +27,7 @@ export const OverlayMenu: React.FC<Props> = ({
       </div>
       <div
         className={`
-          h-full w-full bg-black/30 absolute z-15
+          h-full w-full bg-black/30 fixed z-15
           transition-opacity duration-300 ease-in-out
           ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
         `}
