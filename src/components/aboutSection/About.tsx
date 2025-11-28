@@ -1,4 +1,5 @@
 import { AboutText } from './components/AboutText';
+import { Interests } from './components/Interests';
 
 type Props = {
   className?: string;
@@ -8,10 +9,15 @@ type Props = {
 export const About: React.FC<Props> = ({ className }) => {
   return (
     <div
-      className={`w-full py-16 bg-grey-gradient flex flex-col md:flex-row container-padding ${className ?? ''}`}
+      className={`w-full py-16 bg-grey-gradient flex flex-col container-padding ${className ?? ''}`}
     >
-      <AboutText />
-      <AboutText />
+      <h2 className="text-xl font-semibold text-primary-content px-4">
+        🫧 About
+      </h2>
+      <div className="flex flex-col md:flex-row md:gap-x-16">
+        <AboutText />
+        <Interests />
+      </div>
     </div>
   );
 };

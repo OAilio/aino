@@ -6,7 +6,7 @@ type Props = {
 export const LandingImage: React.FC<Props> = ({ className }) => {
   return (
     <div
-      className={`min-w-[256px] w-[60%] mb-8 md:pb-unset md:w-full flex md:flex-1 justify-center items-center ${className ?? ''}`}
+      className={`min-w-[256px] mb-8 md:pb-unset w-full flex md:flex-1 justify-center items-center ${className ?? ''}`}
     >
       <div className="relative flex">
         <span className="bg-primary z-3 w-full md:w-[256px] lg:w-[456px] flex items-center justify-center rounded-xl shadow-[4px_4px_10px_0px_rgba(0,0,0,0.10)]">
