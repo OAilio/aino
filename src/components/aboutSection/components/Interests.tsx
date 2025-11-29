@@ -26,9 +26,9 @@ const interests = [
 export const Interests: React.FC<Props> = ({ className }) => {
   return (
     <div
-      className={`flex flex-col flex-1 gap-4 lg:gap-4 p-4 ${className ?? ''}`}
+      className={`flex flex-col flex-1 gap-4 lg:gap-4 p-4 text-primary-content ${className ?? ''}`}
     >
-      <h3 className="text-lg font-medium">My interests🎈</h3>
+      <h3 className="text-xl font-medium">My interests🎈</h3>
       <div className="flex flex-col gap-y-4">
         {interests.map((item) => (
           <div key={item.heading}>

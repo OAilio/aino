@@ -21,9 +21,9 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <nav
-        className={`sticky z-10 top-0 w-full h-16 container-padding flex items-center justify-between transition-colors duration-100 ease-out border-b  ${
+        className={`sticky z-10 top-0 w-full h-16 container-padding bg-primary flex items-center justify-between transition-colors duration-100 ease-out border-b  ${
           hasBgColor
-            ? 'border-accent bg-primary shadow-[4px_4px_10px_0px_rgba(0,0,0,0.10)]'
+            ? 'border-accent shadow-[4px_4px_10px_0px_rgba(0,0,0,0.10)]'
             : 'border-transparent'
         }`}
       >

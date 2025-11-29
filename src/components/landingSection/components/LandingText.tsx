@@ -19,7 +19,7 @@ export const LandingText: React.FC<Props> = ({ className }) => {
         exploring molecular innovations, solving global challenges through
         science, research, and collaboration. 🔬🌻☕️
       </p>
-      <PrimaryButton text="Contact" />
+      <PrimaryButton text="Contact" className="text-base" />
     </div>
   );
 };
